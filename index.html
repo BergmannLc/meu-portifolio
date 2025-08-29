@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucas Bergmann — Portfólio</title>
+  <meta name="description" content="Portfólio Front-End de Lucas Bergmann. Projetos, habilidades, contato e experiências." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#home">
+        <span class="logo-badge">LB</span>
+        <span>Lucas <strong>Bergmann</strong></span>
+      </a>
+
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" aria-label="Navegação primária">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact" class="btn primary">Contato</a></li>
+          <li><button class="btn theme-toggle" id="themeToggle" aria-pressed="false">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="kicker">Front-End Developer</p>
+        <h1>Construo interfaces <span class="brand">rápidas</span>, <span class="brand">acessíveis</span> e <span class="brand">elegantes</span>.</h1>
+        <p class="lead">Foco em HTML, CSS e JavaScript moderno. Experiência com responsividade, semântica e boas práticas.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">Ver projetos</a>
+          <a class="btn" href="#contact">Fale comigo</a>
+        </div>
+
+        <ul class="social">
+          <li><a href="https://github.com/BergmannLc" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/lucas-bergmann-de-carvalho-vieira-b17030326/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Currículo PDF</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-media">
+        <div class="card profile">
+          <!-- Salve sua foto como profile.jpg na mesma pasta do index.html -->
+          <img src="imagens/profile.jpg" alt="Foto de Lucas Bergmann" class="profile-pic">
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>+20</strong><span>projetos</span></div>
+          <div class="stat"><strong>3</strong><span>certificações</span></div>
+          <div class="stat"><strong>100%</strong><span>foco UX</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-orb" aria-hidden="true"></div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Sobre mim</h2>
+        <p>Sou desenvolvedor front-end com paixão por criar experiências web eficientes e bonitas. Gosto de transformar ideias em interfaces claras e responsivas, mantendo acessibilidade, performance e código limpo.</p>
+        <p>Atualmente estudando e praticando projetos com foco em HTML5, CSS3 e JavaScript (ES6+).</p>
+      </div>
+      <div class="card highlight">
+        <ul class="list-check">
+          <li>Semântica e SEO on-page</li>
+          <li>Layouts flexíveis (Flexbox / Grid)</li>
+          <li>Componentização e reutilização</li>
+          <li>Boas práticas de acessibilidade (WCAG)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill"><span>HTML5</span><div class="bar"><span data-level="92"></span></div></div>
+        <div class="skill"><span>CSS3</span><div class="bar"><span data-level="88"></span></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><span data-level="80"></span></div></div>
+        <div class="skill"><span>Git & GitHub</span><div class="bar"><span data-level="75"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projetos em destaque</h2>
+      <div class="projects">
+        <!-- cards de exemplo -->
+        <article class="card project" data-tags="html css">
+          <div class="project-thumb"><img src="https://picsum.photos/seed/project1/600/400" alt="Projeto 1" /></div>
+          <div class="project-body">
+            <h3>Clone de Landing Page</h3>
+            <p>Landing page responsiva com foco em tipografia, contraste e animações suaves.</p>
+            <div class="project-actions">
+              <a class="btn" href="#" target="_blank" rel="noopener">Demo</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+        <!-- adicione outros projetos aqui -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Vamos conversar</h2>
+        <p>Aberto a oportunidades e parcerias. Preencha o formulário ou envie um e-mail.</p>
+        <ul class="contact-list">
+          <li>📧 <a href="mailto:lucasbergmanndecarvalho@gmail.com">lucasbergmanndecarvalho@gmail.com</a></li>
+          <li>📍 Brasil</li>
+        </ul>
+      </div>
+
+      <form id="contactForm" class="card form" novalidate>
+        <div class="field">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" placeholder="Seu nome" required />
+          <small class="error">Informe seu nome.</small>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required />
+          <small class="error">E-mail inválido.</small>
+        </div>
+        <div class="field">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" placeholder="Como posso ajudar?" required></textarea>
+          <small class="error">Escreva uma mensagem.</small>
+        </div>
+        <button type="submit" class="btn primary">Enviar</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Lucas Bergmann. Feito com HTML, CSS e JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
